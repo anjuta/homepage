@@ -24,6 +24,8 @@ li {
   margin-bottom: 2rem;
 }
 .flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .md-card {
@@ -32,7 +34,8 @@ li {
   position: relative;
   background: #fefefe;
   border-radius: 1rem;
-  box-shadow: 0 6px 12px rgba(0,0,0,.09), 0 10px 40px rgba(0,0,0,.08);
+  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.09), 0 10px 40px rgba(0,0,0,.08);
+          box-shadow: 0 6px 12px rgba(0,0,0,.09), 0 10px 40px rgba(0,0,0,.08);
 }
 .timeline-wrap {
   position: relative;
@@ -46,7 +49,9 @@ li {
   height: 100%;
   left: 50%;
   border-radius: 9999px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   background-color: #07b624;
 }
 .timeline-item {
