@@ -2,7 +2,6 @@
 body {
   background-color: #edf0f5;
   color: #444;
-  padding-bottom: 20vh;
   line-height: 1.4;
 }
 ul {
@@ -76,4 +75,8 @@ li {
 }
 .timeline-item:nth-child(2n) .timeline-card {
   text-align: left;
+}
+#footer {
+  margin-top: 20vh;
+  text-align: center;
 }
