@@ -1,5 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 body {
   background-color: #edf0f5;
+  color: #444;
+  padding-bottom: 20vh;
+  line-height: 1.4;
+}
+ul {
+  padding-left: 3rem;
+}
+li {
+  list-style: initial;
+}
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.pill {
+  display: inline-block;
+  background-color: #07b624;
+  color: white;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-weight: bold;
+  margin-bottom: 2rem;
 }
 #header-picture {
   position: absolute;
@@ -14,8 +37,8 @@ body {
   display: flex;
 }
 .md-card {
-  padding: 2rem;
-  margin-bottom: 2rem;
+  padding: 3rem;
+  margin-bottom: 4rem;
   position: relative;
   background: #fefefe;
   border-radius: 1rem;
@@ -23,4 +46,34 @@ body {
 }
 #info {
   margin-top: 20vh;
+}
+.timeline-list {
+  position: relative;
+  padding-left: 0;
+}
+.timeline-pipe {
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  left: 50%;
+  border-radius: 9999px;
+  transform: translateX(-50%);
+  background-color: #07b624;
+}
+.timeline-item {
+  list-style: none;
+}
+.timeline-item:nth-child(2n) {
+  text-align: right;
+}
+.timeline-card {
+  display: inline-block;
+  width: 40%;
+  margin-bottom: -10%;
+}
+.timeline-item:nth-child(2n+1) .timeline-card {
+  text-align: right;
+}
+.timeline-item:nth-child(2n) .timeline-card {
+  text-align: left;
 }
